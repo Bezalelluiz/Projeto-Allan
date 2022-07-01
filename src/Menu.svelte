@@ -14,7 +14,7 @@
     </div>
      
         <div class="clicando">
-            <div class="botoes" on:click={()=> trocarEstadoDoJogo ('menu')}>
+            <div class="botoes" on:click={()=> trocarEstadoDoJogo ('jogar')}>
                 Jogar
             </div>
             <div class="botoes" on:click={()=> trocarEstadoDoJogo ('sobre')}>

@@ -1,19 +1,34 @@
 <script>
 	import  Menu  from "./Menu.svelte";
-	import Jogo from  './Jogar.svelte'
+	import Jogar from  './Jogar.svelte'
 	import Sobre from './Sobre.svelte'
 	import ComoJogar from './ComoJogar.svelte'
-	
+	import CasaInterior from "./CasaInterior.svelte";
 	import { estado } from './Estado'
+
 </script>
 
-{#if $estado === 'menu'}
-	<!-- notem como cada componente/módulo que crianos no svelte vira um tag -->
-	<Menu/>
-{:else if $estado === 'sobre'}
-	<Sobre/>
-{:else if $estado === 'jogar'}
-	<Jogo/>
+<main>
+	{#if $estado === 'menu'}
+		<!-- notem como cada componente/módulo que crianos no svelte vira um tag -->
+		<Menu/>
+	{:else if $estado === 'sobre'}
+		<Sobre/>
+	{:else if $estado === 'jogar'}
+		<Jogar/>
 	{:else if $estado === 'comojogar'}
-	<ComoJogar/>
-{/if}
+		<ComoJogar/>
+		{:else if $estado === 'casa'}
+		<CasaInterior/>
+	{/if}
+</main>
+
+<style>
+main{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+</style>

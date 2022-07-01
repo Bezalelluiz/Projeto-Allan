@@ -18,6 +18,8 @@
        - Use o mouse para interagir com os objetos e encontrar os itens;
     </div>
     
+   <div class="voltarmenu">
+       <VoltarMenu/>
+   </div>
 
 </div>
-<VoltarMenu/>

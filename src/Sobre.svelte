@@ -6,6 +6,8 @@
 	import VoltarMenu from './VoltarMenu.svelte'
 </script>
 
+
+
 <div class="nomes">
     <h1>Sobre</h1>
     <div class="card">
@@ -26,6 +28,8 @@
     <div class="card">
         Vinicius
     </div>
-
+    <div class="voltarmenu">
+        <VoltarMenu/>
+    </div>
 </div>
-<VoltarMenu/>
+
