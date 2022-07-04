@@ -4,32 +4,39 @@
 
 <script>
 	import VoltarMenu from './VoltarMenu.svelte'
+    import { estado } from "./Estado.js"
+	import { trocarEstadoDoJogo } from './Estado.js'
+    
+    
+   
+
+
+    function menu(){
+
+trocarEstadoDoJogo ('menu')
+}
+
 </script>
 
 
 
 <div class="nomes">
-    <h1>Sobre</h1>
-    <div class="card">
-        Alunos :
+   
+    <div class="bezalel">
+        Bezalel Luiz 
     </div>
-    <div class="card">
-        Bezalel Luiz Honorato
-    </div>
-    <div class="card">
+    <div class="decio">
         Decio Joab
     </div>
-    <div class="card">
+    <div class="gabriel">
         Gabriel Vinicius
     </div>
-    <div class="card">
+    <div class="gean">
         Gean de Lima
     </div>
-    <div class="card">
-        Vinicius
+    <div class="vinicius">
+        Vinicius Mendonça
     </div>
-    <div class="voltarmenu">
-        <VoltarMenu/>
-    </div>
+    <div class="voltarmenu" on:click={menu}>VOLTAR AO MENU</div>
 </div>
 

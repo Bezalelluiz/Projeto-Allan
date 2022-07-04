@@ -16,58 +16,57 @@
 
 .fundogame{
     position: relative;
-    background-image:url(/images/download.jpeg) ;
+    background-image:url(/images/select.jfif) ;
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
     height: 100%;
 }
 
-.entraporta{
+.rick{
+    background-image: url(/images/rick_20.png);
+    background-repeat: no-repeat;
+    background-position: 52%;
     cursor: pointer;
     position: absolute;
-    left: 1004px;
-    bottom: 18px;
     background-color: transparent;
-    width: 70px;
-    height: 125px;
+    width: 170px;
+    height: 280px;
+    margin-top: 180px;
+    margin-left: 450px;
 }
 
-.chave{
-    background-color: transparent;
+.morty{
+    background-image: url(/images/morty.png);
+    background-repeat: no-repeat;
+    background-position: 52%;
     cursor: pointer;
     position: absolute;
-    left: 790px;
-    bottom: 10px;
-    width: 55px;
-    height: 55px;
-    
+    width: 120px;
+    height: 200px;
+    margin-top: 250px;
+    margin-left: 300px;
 }
 
-.vaso{
-    display: none;
-    width: 300px;
-    height: 300px;
-    border: 2px solid black;
+.personagem{
+    font-size: 40px;
+    display: flex;
     position: absolute;
-    left: 400px;
-    bottom: 100px;
-}
-
-.display{
-    display: none;
-    position: absolute;
+    height: 40px;
     width: 100%;
-    height: 500px;
-    border: 2px solid black;
+    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.pegar{
+
+.voltar{
     cursor: pointer;
+    display: flex;
     position: absolute;
-    border: 2px solid black;
-    background-color: yellow;
-    width: 50px;
-    height: 50px;
-    display: none;
+    height: 300px;
+    width: 70px;
+    margin-left: 80px;
+    margin-top: 150px;
 }

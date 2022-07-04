@@ -3,8 +3,11 @@
 	import Jogar from  './Jogar.svelte'
 	import Sobre from './Sobre.svelte'
 	import ComoJogar from './ComoJogar.svelte'
-	import CasaInterior from "./CasaInterior.svelte";
+	import Rick from "./Rick.svelte";
+	import Escola from "./Escola.svelte"
+	import Conselho from "./Conselho.svelte"
 	import { estado } from './Estado'
+
 
 </script>
 
@@ -18,8 +21,12 @@
 		<Jogar/>
 	{:else if $estado === 'comojogar'}
 		<ComoJogar/>
-		{:else if $estado === 'casa'}
-		<CasaInterior/>
+		{:else if $estado === 'rick'}
+		<Rick/>
+		{:else if $estado === 'escola'}
+		<Escola/>
+		{:else if $estado === 'escola'}
+		<Conselho/>
 	{/if}
 </main>
 

@@ -4,7 +4,7 @@ img{
 }
 
 .conteudo{
-    background-image:url('/images/download.jpeg');
+    background-image:url(/images/fundo.jfif);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;

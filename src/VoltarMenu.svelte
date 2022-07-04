@@ -10,17 +10,17 @@
 <style>
     div{
         
-    background-color: hsla(0, 0%, 99%, 0);   
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     font-weight: 1000;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     height: 50px;
     border: none;
     cursor: pointer;
+    right: 0;
 
     }
 </style>

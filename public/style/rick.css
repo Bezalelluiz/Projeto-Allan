@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rickboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 1100px;
+	height: 500px;
+	border: 1px solid #333;
+	margin: 0 auto;
+}
+
+.fundorick{
+    position: relative;
+    background-image:url(/images/2e3e24b52f3e403df3523aac02ae4c75.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.armario{
+    cursor: pointer;
+    border: 2px solid black;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    background-color: transparent;
+    width: 160px;
+    height: 500px;
+}
+
+.maquina1{
+    border: 2px solid black;
+    background-image: transparent;
+    cursor: pointer;
+    position: absolute;
+    left: 790px;
+    bottom: 50px;
+    width: 55px;
+    height: 55px;
+}
+
+.maquina{
+    border: 2px solid black;
+    visibility: hidden;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    position: absolute;
+    left: 400px;
+    bottom: 100px;
+}
+
+.display{
+    visibility:hidden;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.arma{
+    left: 80px;
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid black;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    visibility:hidden;
+}
+
+.itens{
+    cursor: pointer;
+    border: 2px solid black;
+    visibility:hidden;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    position: absolute;
+    left: 40px;
+    bottom: 100px;
+}
+
+.portal{
+    bottom: 0;
+    right: 10px;
+    margin-top: 100px;
+    cursor: pointer;
+    position: absolute;
+    background-image: url(/images/portal.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 230px;
+    visibility:hidden;
+}
+
+
+.pegando{
+    border: 2px solid black;
+    visibility: hidden;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    position: absolute;
+    left: 400px;
+    bottom: 100px;
+}
+
+
+.armario2{
+    background-image: url(/images/estantem.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 2px solid black;
+    visibility: hidden;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    position: absolute;
+    left: 400px;
+    bottom: 100px;
+}

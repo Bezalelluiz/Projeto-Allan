@@ -8,7 +8,7 @@ h1{
 
 
 .nomes{
-    background-image: url(/images/download.jpeg);
+    background-image: url(/images/fundo.jfif);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -26,8 +26,16 @@ h1{
     flex-direction: column;
     justify-content: center;   
     align-items: center;
-    color: black;
+    color: white;
     
 }
 
+.voltarmenu{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 10;
+    font-size: 30px;
+    color: white;
+}
 
