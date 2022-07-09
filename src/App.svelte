@@ -6,14 +6,15 @@
 	import Rick from "./Rick.svelte";
 	import Escola from "./Escola.svelte"
 	import Conselho from "./Conselho.svelte"
+	import Sala from './Sala.svelte'
 	import { estado } from './Estado'
 
 
 </script>
 
-<main>
+	<main>
 	{#if $estado === 'menu'}
-		<!-- notem como cada componente/módulo que crianos no svelte vira um tag -->
+		
 		<Menu/>
 	{:else if $estado === 'sobre'}
 		<Sobre/>
@@ -25,10 +26,12 @@
 		<Rick/>
 		{:else if $estado === 'escola'}
 		<Escola/>
-		{:else if $estado === 'escola'}
+		{:else if $estado === 'conselho'}
 		<Conselho/>
-	{/if}
-</main>
+		{:else if $estado === 'sala'}
+		<Sala/>
+		{/if}
+	</main> 
 
 <style>
 main{

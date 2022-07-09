@@ -16,59 +16,56 @@
 
 .fundorick{
     position: relative;
-    background-image:url(/images/2e3e24b52f3e403df3523aac02ae4c75.jpg) ;
+    background-image:url(/images/background..png) ;
     background-repeat: no-repeat;
     background-size: 100%;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
 
 .armario{
     cursor: pointer;
-    border: 2px solid black;
     position: absolute;
-    left: 10px;
-    bottom: 0;
+    left: 415px;
+    bottom: 216px;
     background-color: transparent;
-    width: 160px;
-    height: 500px;
+    width: 200px;
+    height: 220px;
 }
 
 .maquina1{
-    border: 2px solid black;
     background-image: transparent;
     cursor: pointer;
     position: absolute;
-    left: 790px;
-    bottom: 50px;
-    width: 55px;
-    height: 55px;
+    left: 110px;
+    bottom: 115px;
+    width: 25px;
+    height: 30px;
 }
 
 .maquina{
-    border: 2px solid black;
     visibility: hidden;
     width: 300px;
     height: 300px;
-    border: 2px solid black;
     position: absolute;
     left: 400px;
-    bottom: 100px;
+    bottom: 0;
 }
 
 .display{
     visibility:hidden;
     position: relative;
     width: 100%;
-    height: 500px;
-    border: 2px solid black;
+    height: 500px;  
 }
 
 .arma{
-    left: 80px;
+    left: 0;
+    bottom: 0;
     cursor: pointer;
-    position: absolute;
-    border: 2px solid black;
+    position: relative;
     background-color: yellow;
     width: 50px;
     height: 50px;
@@ -77,14 +74,12 @@
 
 .itens{
     cursor: pointer;
-    border: 2px solid black;
     visibility:hidden;
     width: 300px;
     height: 300px;
-    border: 2px solid black;
     position: absolute;
     left: 40px;
-    bottom: 100px;
+    bottom: 0;
 }
 
 .portal{
@@ -107,10 +102,9 @@
     visibility: hidden;
     width: 300px;
     height: 300px;
-    border: 2px solid black;
     position: absolute;
     left: 400px;
-    bottom: 100px;
+    bottom: 0;
 }
 
 
@@ -118,11 +112,9 @@
     background-image: url(/images/estantem.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
-    border: 2px solid black;
     visibility: hidden;
     width: 300px;
     height: 300px;
-    border: 2px solid black;
     position: absolute;
     left: 400px;
     bottom: 100px;

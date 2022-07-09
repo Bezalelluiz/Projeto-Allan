@@ -16,7 +16,7 @@
 
 .fundo1{
     position: relative;
-    background-image:url(/images/rick-morty-10-melhores-episodios-da-serie-animada5-e1506640458981.jpg) ;
+    background-image:url(/images/corredor_escola.png) ;
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -25,33 +25,29 @@
 
 .armario{
     cursor: pointer;
-    border: 2px solid black;
     position: absolute;
-    left: 90px;
-    bottom: 0;
+    margin-left: 330px;
+    margin-top: 250px;
     background-color: transparent;
-    width: 160px;
-    height: 500px;
+    width: 50px;
+    height: 180px;
 }
 
 .arma{
-    border: 2px solid black;
-    background-image: transparent;
     cursor: pointer;
     position: absolute;
-    left: 790px;
-    bottom: 10px;
-    width: 55px;
-    height: 55px;
+    margin-left: 576px;
+    margin-top: 250px;
+    background-color: transparent;
+    width: 50px;
+    height: 180px;
     
 }
 
 .maquina{
-    border: 2px solid black;
     visibility: hidden;
     width: 300px;
     height: 300px;
-    border: 2px solid black;
     position: absolute;
     left: 400px;
     bottom: 100px;
@@ -62,13 +58,11 @@
     position: absolute;
     width: 100%;
     height: 500px;
-    border: 2px solid black;
 }
 
 .pegar{
     cursor: pointer;
     position: absolute;
-    border: 2px solid black;
     background-color: yellow;
     width: 50px;
     height: 50px;
@@ -89,4 +83,35 @@
     width: 150px;
     height: 230px;
     visibility:hidden;
+}
+
+.porta{
+    cursor: pointer;
+    margin-top: 250px;
+    margin-left: 213px;
+    width: 106px;
+    height: 180px;
+}
+
+.rick{
+    background-image: url(/images/rick_20.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+    width: 170px;
+    height: 280px;
+    margin-top: 320px;
+    margin-left: 0;
+    animation: rickanimation 3s linear;
+}
+
+@keyframes rickanimation{
+    from{
+        left: 0;
+    }
+    to{
+        left: 213px;
+    }
 }

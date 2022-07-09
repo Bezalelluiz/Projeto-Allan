@@ -52,6 +52,10 @@
         arma ++
         aparecer()
     }
+
+    function porta(){
+        trocarEstadoDoJogo('sala')
+    }
 </script>
 
 <div class="board1">
@@ -63,13 +67,14 @@
             </div>
             
         </div>
-    
+        <div class="rick" img='/images/rick_20.png'></div>
         <div class="armario" on:click={coletando}>
         <div class="pegando" on:click={coletou}></div>
         </div>
         <div class="arma" on:click={coletar}></div>
         <div class="itens" on:click={aparecer}></div>
         <div class="portal" on:click={portal}></div>
+        <div class="porta" on:click={porta}></div>
         
         
     

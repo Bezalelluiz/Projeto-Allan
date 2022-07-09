@@ -55,17 +55,17 @@
     <div class="fundorick">
         <div class="display" on:click={fechar}>
             <div class="maquina">
-                <div class="arma" on:click={coletou}>arma</div>
             </div>
-            
+            <div class="arma" on:click={coletou}>arma</div>
         </div>
+        
         <div class="armario" on:click={coletando}>
             <div class="pegando" on:click={coletou}></div>
         </div>
-        <div class="maquina1" on:click={coletar}></div>
         <div class="armario2"></div>
-        <div class="itens" on:click={aparecer}></div>
-        <div class="portal" on:click={portal}></div>
+            <div class="maquina1" on:click={coletar}></div>
+            <div class="itens" on:click={aparecer}></div>
+            <div class="portal" on:click={portal}></div>
         
     
     </div>
