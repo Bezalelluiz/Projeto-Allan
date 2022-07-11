@@ -1,0 +1,105 @@
+.planetaboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.dialogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    width: 99.2%;
+    height: 20%;
+    background-color: gray;
+    position: relative;
+    color:black;
+}
+
+
+.fundoplaneta{
+    visibility:visible;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.fundoplaneta img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cabo img{
+    position: absolute;
+    width: 50px;
+}
+.cabo{
+    visibility: visible;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: -340px;
+    transform: rotateY(180deg);
+}
+
+.nucleo img{
+    position: absolute;
+    width: 70px;
+}
+
+.nucleo{
+    visibility: visible;
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: 280px;
+    margin-left: -1100px;
+    transform:rotateY(180deg);
+}
+
+.corpo img{
+    position: absolute;
+    width: 50px;
+}
+
+.corpo{
+    visibility: visible;
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: 220px;
+    margin-left: -380px;
+    
+}
+
+.portal{
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    bottom: 180px;
+    right: 0;    
+}
+.portal img{
+     width: 180px;
+}
+
+.rick{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -200px;
+}
+
+.rick img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}

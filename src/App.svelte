@@ -5,9 +5,12 @@
 	import ComoJogar from './ComoJogar.svelte'
 	import Rick from "./Rick.svelte";
 	import Escola from "./Escola.svelte"
-	import Conselho from "./Conselho.svelte"
 	import Sala from './Sala.svelte'
 	import { estado } from './Estado'
+import Morty from "./Morty.svelte";
+import Planeta from "./Planeta.svelte";
+import Prisao from "./Prisao.svelte";
+import Fim from "./Fim.svelte";
 
 
 </script>
@@ -26,10 +29,16 @@
 		<Rick/>
 		{:else if $estado === 'escola'}
 		<Escola/>
-		{:else if $estado === 'conselho'}
-		<Conselho/>
 		{:else if $estado === 'sala'}
 		<Sala/>
+		{:else if $estado === 'morty'}
+		<Morty/>
+		{:else if $estado === 'planeta'}
+		<Planeta/>
+		{:else if $estado === 'prisao'}
+		<Prisao/>
+		{:else if $estado === 'fim'}
+		<Fim/>
 		{/if}
 	</main> 
 

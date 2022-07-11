@@ -1,117 +1,165 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.escolaboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
-.board1{
+
+.dialogo{
     display: flex;
     align-items: center;
     justify-content: center;
-	width: 1100px;
-	height: 500px;
-	border: 1px solid #333;
-	margin: 0 auto;
+    border: 5px solid black;
+    width: 99.2%;
+    height: 20%;
+    background-color: gray;
+    position: relative;
+    color:black;
 }
 
-.fundo1{
+
+.fundo{
+    visibility:visible;
     position: relative;
-    background-image:url(/images/corredor_escola.png) ;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.fundo img{
+    position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.armario{
-    cursor: pointer;
-    position: absolute;
-    margin-left: 330px;
-    margin-top: 250px;
-    background-color: transparent;
-    width: 50px;
-    height: 180px;
-}
-
-.arma{
-    cursor: pointer;
-    position: absolute;
-    margin-left: 576px;
-    margin-top: 250px;
-    background-color: transparent;
-    width: 50px;
-    height: 180px;
-    
-}
-
-.maquina{
+.armariovazio1{
     visibility: hidden;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    left: 400px;
-    bottom: 100px;
-}
-
-.display{
-    visibility: hidden;
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 
-.pegar{
-    cursor: pointer;
-    position: absolute;
-    background-color: yellow;
+.armariovazio{
+    visibility: visible;
     width: 50px;
-    height: 50px;
+    height: 145px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: -85px;
+}
+
+.cabo img{
+    position: absolute;
+    width: 90px;
+    height: 100px;
+}
+.cabo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 300px;
 }
 
 
+.armariotrancado{
+    cursor: pointer;
+    position:absolute;
+    width: 50px;
+    height: 145px;
+    margin-top: -85px;
+    margin-left: -470px;
+}
 
-.portal{
-    bottom: 0;
-    right: 10px;
-    margin-top: 100px;
+.armario{
+    visibility: visible;
+    width: 50px;
+    height: 145px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: -85px;
+    margin-left: -225px;
+}
+
+.armario1{
+     visibility: hidden;
+     position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.nucleo img{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+}
+
+.nucleo{
+    visibility: hidden;
     cursor: pointer;
     position: absolute;
-    background-image: url(/images/portal.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 150px;
-    height: 230px;
-    visibility:hidden;
+    margin-top: 200px;
+    margin-left: 630px;
 }
 
 .porta{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-bottom: 90px;
+    margin-left: -680px;
+}
+
+
+.armario2{
+    visibility: visible;
+    width: 50px;
+    height: 145px;
+    position: absolute;
     cursor: pointer;
-    margin-top: 250px;
-    margin-left: 213px;
-    width: 106px;
-    height: 180px;
+    margin-top: -85px;
+    margin-left: 240px;
+}
+
+.armario3{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.chave{
+     visibility: hidden;
+     cursor: pointer;
+     position: absolute;
+     margin-top: 90px;
+     margin-left: 510px;
+}
+
+.chave img{
+    position: absolute;
+    width: 30px;
+    height: 20px;
 }
 
 .rick{
-    background-image: url(/images/rick_20.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    background-color: transparent;
-    width: 170px;
-    height: 280px;
-    margin-top: 320px;
-    margin-left: 0;
-    animation: rickanimation 3s linear;
+    margin-left: -200px;
+    margin-top: 100px;
 }
 
-@keyframes rickanimation{
-    from{
-        left: 0;
-    }
-    to{
-        left: 213px;
-    }
+.rick img{
+    position: absolute;
+    width: 150px;
+    height: 150px;
 }

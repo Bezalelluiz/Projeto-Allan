@@ -1,12 +1,16 @@
 .voltarmenu{
-    background-color: #6ee641;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    background-color: grey;
+    box-shadow: 0px 12px 15px black;
     display: flex;
     position: absolute;
-    bottom: 0;
-    right: 10;
+    bottom: 10px;
     cursor: pointer;
-    font-size: 25px;
-    color: #22a2bd;
+    font-size: 20px;
+    color: black;
     border-radius: 16px;
 }
 

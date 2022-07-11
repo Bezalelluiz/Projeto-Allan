@@ -3,74 +3,43 @@
 </svelte:head>
 
 <script>
-    
-    import VoltarMenu from './VoltarMenu.svelte'
-	import { estado } from "./Estado.js"
-	import { trocarEstadoDoJogo } from './Estado.js'
-    
-    
-    let arma = 0
+
+    import {trocarEstadoDoJogo} from './Estado'
+
+    let arma = 3
+    let texto = 'Encontre as peças para formar a arma de portal e avançar para o próximo nivel!'
 
     function coletar(){
-        document.querySelector('.maquina').style.visibility = 'visible'
-        document.querySelector('.display').style.visibility = 'visible'
-        document.querySelector('.arma').style.visibility = 'visible'
-    }
-
-    function coletando(){
-
-        document.querySelector('.display').style.visibility = 'visible'
-        document.querySelector('.arma').style.visibility = 'visible'
-        document.querySelector('.armario2').style.visibility = 'visible'
-    }
-
-    function aparecer(){
-        if(arma == 3){
-            document.querySelector('.portal').style.visibility = 'visible'
-        }
-    }
-
-    function portal(){
-        trocarEstadoDoJogo('escola')
-    }
-
-     function fechar(){
-        this.style.visibility = 'hidden';
-        document.querySelector('.maquina').style.visibility = 'hidden'
-        document.querySelector('.arma').style.visibility = 'hidden'   
-        document.querySelector('.armario2').style.visibility = 'hidden' 
-    }
-
-    function coletou(){
-        arma ++
-        document.querySelector('.arma').style.visibility = 'hidden'
+        this.style.visibility = 'hidden'
+        arma --
+        texto = `restam ${arma} peças da arma!`
         aparecer()
     }
 
- 
+    function aparecer(){
+        if(arma == 0){
+            texto = 'Você encontrou todas as peças entre no portal para prosseguir!'
+            document.querySelector('.portal').style.visibility= 'visible'
+        
+        }
+    }
+    function portal(){
+        trocarEstadoDoJogo ('escola')
+
+    }       
+
 </script>
 
-<div class="rickboard">
 
-    <div class="fundorick">
-        <div class="display" on:click={fechar}>
-            <div class="maquina">
-            </div>
-            <div class="arma" on:click={coletou}>arma</div>
-        </div>
-        
-        <div class="armario" on:click={coletando}>
-            <div class="pegando" on:click={coletou}></div>
-        </div>
-        <div class="armario2"></div>
-            <div class="maquina1" on:click={coletar}></div>
-            <div class="itens" on:click={aparecer}></div>
-            <div class="portal" on:click={portal}></div>
-        
-    
-    </div>
 
-		
+
+<div class="mortyboard">
+    <div class="fundo"><img src="/images/background..png" alt="fundo"></div>
+    <div class="cabo" on:click={coletar}><img src="/images/empunhadura.png" alt="cabo"></div>
+    <div class="nucleo" on:click={coletar}><img src="/images/nucleo.png" alt="nucleo"></div>
+    <div class="corpo" on:click={coletar}><img src="/images/cano.png" alt="cano"></div>
+    <div class="portal" on:click={portal}><img src="/images/portal.png" alt="portal"></div>
+    <div class="dialogo"><h1>{texto}</h1></div>
+    <div class="rick"><img src="/images/rick_20.png" alt="rick"></div>
+        
 </div>
-
-

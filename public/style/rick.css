@@ -1,121 +1,97 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.rickboard{
+.mortyboard{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-	width: 1100px;
-	height: 500px;
-	border: 1px solid #333;
-	margin: 0 auto;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
-.fundorick{
+.fundo{
     position: relative;
-    background-image:url(/images/background..png) ;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.fundo img{
+    position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.armario{
-    cursor: pointer;
+.dialogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    width: 99.2%;
+    height: 20%;
+    background-color: gray;
+    position: relative;
+    color:black;
+}
+.rick{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    left: 415px;
-    bottom: 216px;
-    background-color: transparent;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+
+.rick img{
+    position: absolute;
     width: 200px;
-    height: 220px;
+    height: 200px;
 }
 
-.maquina1{
-    background-image: transparent;
-    cursor: pointer;
+.cabo img{
     position: absolute;
-    left: 110px;
-    bottom: 115px;
-    width: 25px;
-    height: 30px;
-}
-
-.maquina{
-    visibility: hidden;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    left: 400px;
-    bottom: 0;
-}
-
-.display{
-    visibility:hidden;
-    position: relative;
-    width: 100%;
-    height: 500px;  
-}
-
-.arma{
-    left: 0;
-    bottom: 0;
-    cursor: pointer;
-    position: relative;
-    background-color: yellow;
     width: 50px;
-    height: 50px;
-    visibility:hidden;
+}
+.cabo{
+    visibility: visible;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -305px;
 }
 
-.itens{
-    cursor: pointer;
-    visibility:hidden;
-    width: 300px;
-    height: 300px;
+.nucleo img{
     position: absolute;
-    left: 40px;
-    bottom: 0;
+    width: 50px;
+}
+
+.nucleo{
+    visibility: visible;
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: -170px;
+    margin-left: -1100px;
+}
+
+.corpo img{
+    position: absolute;
+    width: 50px;
+}
+
+.corpo{
+    visibility: visible;
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: -70px;
+    margin-left: -1150px;
+    transform: rotateZ(300deg);
 }
 
 .portal{
-    bottom: 0;
-    right: 10px;
-    margin-top: 100px;
+    visibility: hidden;
     cursor: pointer;
     position: absolute;
-    background-image: url(/images/portal.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 150px;
-    height: 230px;
-    visibility:hidden;
+    bottom: 180px;
+    right: 0;    
 }
-
-
-.pegando{
-    border: 2px solid black;
-    visibility: hidden;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    left: 400px;
-    bottom: 0;
-}
-
-
-.armario2{
-    background-image: url(/images/estantem.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    visibility: hidden;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    left: 400px;
-    bottom: 100px;
+.portal img{
+     width: 180px;
 }

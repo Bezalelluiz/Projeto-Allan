@@ -8,7 +8,7 @@ h1{
 
 
 .nomes{
-    background-image: url(/images/fundo.jfif);
+    background-color: rgb(110, 107, 107);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;

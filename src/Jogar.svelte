@@ -28,23 +28,23 @@
         trocarEstadoDoJogo ('menu')
     }
 
-
+    let texto = 'Escolha seu Personagem!'
 </script>
 
-<div class="gameboard">
+<div class="board">
 
-    <div class="fundogame">
-        <div class="personagem">Escolha seu Personagem</div>
-            
+    <div class="fundo">
         
-        <div class="rick" on:click={rick}></div>
-        <div class="morty" on:click={morty}></div>
+        <img src="/images/Sala final.png" alt="jogar">
+        
+        <div class="rick" on:click={rick}><img src="/images/rick_20.png" alt="rick"></div>
+        <div class="morty" on:click={morty}><img src="/images/morty.png" alt="morty"></div>
     
         <div class="voltar" on:click={menu}></div>
         
     
     </div>
-
+    <div class="dialogo"><h1>{texto}</h1></div>
 		
 </div>
 
