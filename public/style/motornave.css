@@ -1,0 +1,89 @@
+.board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.dialogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    width: 99.2%;
+    height: 20%;
+    background-color: gray;
+    position: relative;
+    color:black;
+}
+
+
+.fundo{
+    visibility:visible;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.fundo img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cabo img{
+    position: absolute;
+    width: 50px;
+}
+.cabo{
+    visibility: visible;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -305px;
+}
+
+.nucleo img{
+    position: absolute;
+    width: 220px;
+    height: 156px;
+}
+
+.nucleo{
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 600px;
+}
+
+.corpo img{
+    position: absolute;
+    width: 50px;
+}
+
+.corpo{
+    visibility: visible;
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: -70px;
+    margin-left: -1150px;
+    transform: rotateZ(300deg);
+}
+
+.portal{
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    bottom: 180px;
+    right: 0;    
+}
+.portal img{
+     width: 180px;
+     
+}

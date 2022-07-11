@@ -3,8 +3,7 @@
 </svelte:head>
 
 <script>
-    import VoltarMenu from './VoltarMenu.svelte'
-	import { estado } from "./Estado.js"
+    
     import {trocarEstadoDoJogo} from './Estado'
     
     let texto = 'Encontre a chave para libertar o Morty!'

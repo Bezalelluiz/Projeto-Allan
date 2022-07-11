@@ -11,6 +11,8 @@ import Morty from "./Morty.svelte";
 import Planeta from "./Planeta.svelte";
 import Prisao from "./Prisao.svelte";
 import Fim from "./Fim.svelte";
+import Privada from "./Privada.svelte";
+import Motor from "./Motor.svelte";
 
 
 </script>
@@ -39,6 +41,10 @@ import Fim from "./Fim.svelte";
 		<Prisao/>
 		{:else if $estado === 'fim'}
 		<Fim/>
+		{:else if $estado === 'privada'}
+		<Privada/>
+		{:else if $estado === 'motor'}
+		<Motor/>
 		{/if}
 	</main> 
 

@@ -4,10 +4,9 @@
 
 <script>
     
-    import VoltarMenu from './VoltarMenu.svelte'
-	import { estado } from "./Estado.js"
+    
 	import { trocarEstadoDoJogo } from './Estado.js'
-import { text } from 'svelte/internal';
+
     
     let texto = 'Encontre as peças para formar a arma de portal e avançar para o próximo nivel!'
     let arma = 2
