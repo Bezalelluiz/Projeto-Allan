@@ -43,14 +43,14 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-left: -200px;
+    margin-left: -800px;
     margin-top: -50px;
 }
 
 .morty img{
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 .rick{
@@ -58,14 +58,14 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-left: 200px;
-    margin-top: -100px;
+    margin-left: -500px;
+    margin-top: -140px;
 }
 
 .rick img{
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 
 .reiniciar{

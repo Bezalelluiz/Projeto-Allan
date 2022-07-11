@@ -1,5 +1,5 @@
 <svelte:head>
-    <link rel="stylesheet" href="/stule/motornave.css">
+    <link rel="stylesheet" href="/style/motornave.css">
 </svelte:head>
 
 <script>
@@ -18,12 +18,12 @@
     function aparecer(){
         if(arma == 0){
             texto = 'você encontrou todas as peças entre no portal para prosseguir!'
-            document.querySelector('.portal').style.visibility= 'visible'
+            document.querySelector('.portal').style.visibility = 'visible'
         
         }
     }
     function portal(){
-        trocarEstadoDoJogo ('menu')
+        trocarEstadoDoJogo ('prisaorick')
 
     }       
 
@@ -37,6 +37,7 @@
         <div class="cabo" on:click={coletar}><img src="/images/empunhadura.png" alt="cabo"></div>
         <div class="corpo" on:click={coletar}><img src="/images/cano.png" alt="cano"></div>
         <div class="portal" on:click={portal}><img src="/images/portal.png" alt="portal"></div>
-        <div class="dialogo"><h1>{texto}</h1></div>
     </div>
+    <div class="morty"><img src="/images/morty.png" alt="morty"></div>
+    <div class="dialogo"><h1>{texto}</h1></div>
 </div>

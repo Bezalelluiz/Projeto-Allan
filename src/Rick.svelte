@@ -33,7 +33,7 @@
 
 
 
-<div class="mortyboard">
+<div class="board">
     <div class="fundo"><img src="/images/background..png" alt="fundo"></div>
     <div class="cabo" on:click={coletar}><img src="/images/empunhadura.png" alt="cabo"></div>
     <div class="nucleo" on:click={coletar}><img src="/images/nucleo.png" alt="nucleo"></div>

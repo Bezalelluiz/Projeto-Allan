@@ -13,6 +13,8 @@ import Prisao from "./Prisao.svelte";
 import Fim from "./Fim.svelte";
 import Privada from "./Privada.svelte";
 import Motor from "./Motor.svelte";
+import Prisaorick from "./Prisaorick.svelte";
+import Fim2 from "./Fim2.svelte";
 
 
 </script>
@@ -45,6 +47,10 @@ import Motor from "./Motor.svelte";
 		<Privada/>
 		{:else if $estado === 'motor'}
 		<Motor/>
+		{:else if $estado === 'prisaorick'}
+		<Prisaorick/>
+		{:else if $estado === 'fim2'}
+		<Fim2/>
 		{/if}
 	</main> 
 

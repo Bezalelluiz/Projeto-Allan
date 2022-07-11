@@ -24,7 +24,7 @@
         }
     }
     function portal(){
-        trocarEstadoDoJogo ('menu')
+        trocarEstadoDoJogo ('privada')
 
     }       
 
@@ -40,5 +40,6 @@
     <div class="corpo" on:click={coletar}><img src="/images/cano.png" alt="cano"></div>
     <div class="portal" on:click={portal}><img src="/images/portal.png" alt="portal"></div>
     <div class="dialogo"><h1>{texto}</h1></div>
+    <div class="morty"><img src="/images/morty.png" alt="morty"></div>
         
 </div>

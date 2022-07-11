@@ -36,78 +36,24 @@
     width: 100%;
     height: 100%;
 }
-.cabo img{
-    position: absolute;
-    width: 50px;
-}
-.cabo{
-    visibility: visible;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 300px;
-    margin-top: 200px;
-    transform: rotateZ(270deg);
-}
-
-.nucleo img{
-    position: absolute;
-    width: 220px;
-    height: 156px;
-    
-}
-
-.nucleo{
-    visibility: hidden;
-    cursor: pointer;
-    position: absolute;
-    margin-top: 190px;
-    margin-left: 600px;
-}
-
-.corpo img{
-    position: absolute;
-    width: 50px;
-}
-
-.corpo{
-    visibility: visible;
-    cursor: pointer;
-    position: absolute;
-    margin-bottom: -140px;
-    margin-left: -450px;
-    transform: rotateZ(20deg);
-}
-
-.portal{
-    visibility: hidden;
-    cursor: pointer;
-    position: absolute;
-    bottom: 180px;
-    right: 0;    
-}
-.portal img{
-     width: 180px;
-     
-}
-.privada{
-    visibility: visible;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    cursor: pointer;
-    margin-top: -544px;
-    margin-left: -1160px;
-}
-
-.privada1{
-     visibility: hidden;
-     position: absolute;
-    width: 100%;
-    height: 100%;
-}
 
 .morty{
-    visibility: visible;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -50px;
+}
+
+.morty img{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.rick{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,8 +62,51 @@
     margin-top: -100px;
 }
 
+.rick img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.reiniciar{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: black;
+}
+
+.reiniciar button{
+    width: 100%;
+    height: 100%;
+}
+
+.morty{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -50px;
+}
+
 .morty img{
     position: absolute;
     width: 200px;
     height: 200px;
+}
+
+.rick{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: -100px;
+}
+
+.rick img{
+    position: absolute;
+    width: 250px;
+    height: 250px;
 }
