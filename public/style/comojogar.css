@@ -1,14 +1,15 @@
 h1{
     font-size: 50px;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 
 .nomes{
-    background-color: rgb(110, 107, 107);
+    background-color: rgb(66, 66, 66);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -21,6 +22,7 @@ h1{
 }
 
 .card{
+    margin-bottom: 200px;
     font-size: 25px;
     display: flex;
     flex-direction: column;

@@ -9,14 +9,11 @@
 <div class="nomes">
     <h1>Como Jogar</h1>
     <div class="card">
-       - Liberte o personagem que foi preso, encontrando itens ao longo das fases;
+       <p> -Um dos personagens e sequestrado seu Objetivo e encontra-lo e resgata-lo!;</p>
+       <p>-Encontre peças da arma de portais para avançar pelas fases!;</p>  
+      <p>-Use o mouse para interagir com os objetos e encontrar as peças!;</p>
     </div>
-    <div class="card">
-       - Objetivo :Ache itens para montar a arma de portais antes que o tempo acabe para avançar entre as fases;
-    </div>
-    <div class="card">
-       - Use o mouse para interagir com os objetos e encontrar os itens;
-    </div>
+   
     
    <div class="voltarmenu">
        <VoltarMenu/>
